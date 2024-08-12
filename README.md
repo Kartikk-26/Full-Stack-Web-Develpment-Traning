@@ -37,7 +37,11 @@ This repository is primarily for personal growth, but I welcome any feedback or 
 ➔ **Build Real-World Projects**: Apply what I learn by building projects that simulate real-world applications.  
 ➔ **Master Full Stack Development**: Achieve proficiency in both frontend and backend development to become a well-rounded full stack developer.
 
+---
+
 ## 🌟 Connect with Me
-Feel free to connect with me on LinkedIn for more updates.
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/-kartikjain/) for more updates.
+
+---
 
 Thank you for visiting my "Everyday Learning Series: Full Stack Development" repository. Let's learn and grow together! 🚀
