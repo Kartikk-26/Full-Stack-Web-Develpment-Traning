@@ -1,0 +1,27 @@
+ul{
+    list-style-type: square;
+    color: blue
+}
+
+h1{
+    margin :20px 20px 20px 20px;
+    border : 2px dashed red;
+    font-size: 1em;
+}
+
+h2{
+    margin : 10px 20px;
+    border : 2px solid navy;
+    padding :20px; 
+    border-radius: 20px;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.test{
+    font-size: 1em;
+    height: 300px;
+    width: 300px;
+}

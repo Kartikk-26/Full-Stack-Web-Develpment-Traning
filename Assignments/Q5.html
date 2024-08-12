@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .div1{
+            background-color: black;
+            height: 200px;
+            display: grid;
+            grid-template-columns: repeat(12,2fr);
+            padding: 2px; 
+            
+        }
+
+        .item1{
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2.5px solid black;
+        }
+        
+        @media screen and (max-width:400px) {
+            div{
+                    flex-direction: column;
+                    background-color: black;
+                    color: navajowhite;
+            }
+            
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="div1">
+        
+        <div class="item1">Box1</div>
+        <div class="item1">box2</div>
+        <div class="item1">box3</div>
+        <div class="item1">box4</div>
+        <div class="item1">box5</div>
+        <div class="item1">box6</div>
+        <div class="item1">box7</div>
+        <div class="item1">box8</div>
+        <div class="item1">box9</div>
+        <div class="item1">box10</div>
+        <div class="item1">box11</div>
+        <div class="item1">box12</div>
+        
+    </div>
+</body>
+</html>

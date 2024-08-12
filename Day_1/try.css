@@ -1,0 +1,21 @@
+#para1{
+    padding:10px;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#para2{
+    padding:10px;
+    background-color:blanchedalmond;
+    position: relative;
+    top: 100px;
+    right: 100px;
+}
+
+#para3{
+    padding:10px;
+    background-color:darkorange;
+
+}

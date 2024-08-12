@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone Sign Up</title>
+    <style>
+        body {
+            background-color: #E9EEF2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #4267B2;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        .login-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #365899;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #29487d;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #365899;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4267B2;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #365899;
+        }
+
+        .small-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .small-text a {
+            color: #365899;
+            text-decoration: none;
+        }
+
+        .small-text a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer a {
+            color: #365899;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Facebook</a>
+        </div>
+        <form class="login-form" action="https://linktr.ee/kartik.jain" method="post">
+            <input type="text" name="email" placeholder="Email or Phone">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h1>Create an account</h1>
+        <p>It's free and always will be.</p>
+        <form action="https://linktr.ee/kartik.jain">
+            <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            </div>
+            <div class="input-group">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname" placeholder="Surname">
+            </div>
+            <div class="input-group">
+                <label for="mobileEmail">Mobile number or email</label>
+                <input type="text" id="mobileEmail" name="mobileEmail" placeholder="Mobile number or email">
+            </div>
+            <div class="input-group">
+                <label for="password">New password</label>
+                <input type="password" id="password" name="password" placeholder="New password">
+            </div>
+            <div class="input-group">
+                <label for="birthday">Birthday</label>
+                <select id="day" name="day">
+                    <option value="">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select id="month" name="month">
+                    <option value="">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                </select>
+                <select id="year" name="year">
+                    <option value="">Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                </select>
+                <div class="small-text">
+                    Why do I need to provide my date of birth?
+                </div>
+            </div>
+            <div class="gender-group">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div class="small-text">
+                By clicking Create an account, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>.
+            </div>
+            <div class="button-group">
+                <button type="submit">Create an account</button>
+            </div>
+        </form>
+        <div class="small-text">
+            Create a <a href="#">Page</a> for a celebrity, band or business.
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">Sign Up</a> 
+        <a href="#">Log In</a> 
+        <a href="#">Messenger</a> 
+        <a href="#">DotNetTec</a> 
+    </div>
+</body>
+</html>
