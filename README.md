@@ -17,7 +17,7 @@ Feel free to explore the repository, fork it, or clone it to your local machine.
 
 ### Cloning the Repository
 ```bash
-git clone https://github.com/YourUsername/Full-Stack-Development.git
+git clone https://github.com/Kartikk-26/Full-Stack-Web-Develpment-Traning.git
 ```
 
 ## 🛠️ Technologies Covered
