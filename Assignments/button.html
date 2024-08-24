@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Colour Task</title>
+    <style>
+        #myButton , #disappearButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #myButton{
+            background-color: blue;
+        }
+
+        #disappearButton{
+            background-color: black;
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button id="myButton" onclick="changeColor()">Click Me To See The Colour Change</button>
+    <button id="disappearButton" onclick="disappear()">Click Me To Disappear</button>
+    
+    <script>
+        var colors = ["red", "green", "blue", "yellow", "orange", "purple"];
+        var currentIndex = 0;
+
+        function changeColor() {
+            // Change the button's background color to the next color in the array
+            var button = document.getElementById("myButton");
+            button.style.backgroundColor = colors[currentIndex];
+
+            // Increment the index to cycle through the colors
+            currentIndex++;
+
+            // Reset index if it exceeds the length of the color array
+            if (currentIndex >= colors.length) {
+                currentIndex = 0;
+            }
+        }
+
+        function disappear(){
+            // Make the button disappear by setting its opacity to 0
+            var button = document.getElementById("disappearButton");
+            button.style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>
