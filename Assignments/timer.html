@@ -5,38 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Counter Application</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
+      background: linear-gradient(135deg, #8bc6ec, #9599e2);
+      color: #333;
     }
+
     .counter-container {
       text-align: center;
       background-color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      animation: fadeIn 1s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .counter {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 72px;
+      margin-bottom: 30px;
+      color: #4a90e2;
+      transition: transform 0.3s ease;
     }
+
+    .counter:hover {
+      transform: scale(1.1);
+    }
+
     .btn {
       font-size: 18px;
-      padding: 10px 20px;
-      margin: 5px;
+      padding: 12px 20px;
+      margin: 10px;
       cursor: pointer;
       border: none;
-      border-radius: 5px;
-      background-color: #007bff;
+      border-radius: 30px;
+      background-color: #4a90e2;
       color: white;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
     .btn:hover {
-      background-color: #0056b3;
+      background-color: #357ab8;
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+
+    .reset-btn {
+      background-color: #e94e77;
+    }
+
+    .reset-btn:hover {
+      background-color: #c44164;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 14px;
+      color: #fff;
     }
   </style>
 </head>
@@ -45,8 +95,12 @@
     <div id="counter" class="counter">0</div>
     <button id="incrementBtn" class="btn">Increment</button>
     <button id="decrementBtn" class="btn">Decrement</button>
-    <button id="resetBtn" class="btn">Reset</button>
+    <button id="resetBtn" class="btn reset-btn">Reset</button>
   </div>
+
+  <footer>
+    &copy; 2024 Your Website
+  </footer>
 
   <script>
     let counterValue = 0;
