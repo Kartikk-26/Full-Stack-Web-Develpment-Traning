@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .counter-container {
+      text-align: center;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .counter {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter-container">
+    <div id="counter" class="counter">0</div>
+    <button id="incrementBtn" class="btn">Increment</button>
+    <button id="decrementBtn" class="btn">Decrement</button>
+    <button id="resetBtn" class="btn">Reset</button>
+  </div>
+
+  <script>
+    let counterValue = 0;
+
+    const counterDisplay = document.getElementById('counter');
+    const incrementBtn = document.getElementById('incrementBtn');
+    const decrementBtn = document.getElementById('decrementBtn');
+    const resetBtn = document.getElementById('resetBtn');
+
+    // Increment function
+    incrementBtn.addEventListener('click', () => {
+      counterValue++;
+      counterDisplay.textContent = counterValue;
+    });
+
+    // Decrement function
+    decrementBtn.addEventListener('click', () => {
+      if (counterValue > 0) {
+        counterValue--;
+        counterDisplay.textContent = counterValue;
+      }
+    });
+
+    // Reset function
+    resetBtn.addEventListener('click', () => {
+      counterValue = 0;
+      counterDisplay.textContent = counterValue;
+    });
+  </script>
+</body>
+</html>
