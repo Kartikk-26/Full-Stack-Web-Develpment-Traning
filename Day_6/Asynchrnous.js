@@ -86,7 +86,8 @@ fetchData()
 // calling an apis using fetch() function
 // NOTE fetch function always returns promise
 
-fetch('https://restcountries.com/v3.1/all').then((res)=>{
+fetch('https://restcountries.com/v3.1/all')
+.then((res)=>{
     return res.json()
  }).then((data)=>{
     
@@ -94,6 +95,7 @@ fetch('https://restcountries.com/v3.1/all').then((res)=>{
          console.log(element)
          const h1 = document.createElement('h1')
          const img = document.createElement("img");
+         
          img.style.width = '200px'
          img.src = element.flags.svg
          h1.innerText = element.name.common;
